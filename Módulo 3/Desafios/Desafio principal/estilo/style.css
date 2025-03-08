@@ -1,13 +1,23 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Fonte1';
-    src: url('../');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva,  Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+
 }
+
 *{
     margin: 0px;
     padding: 0px;
+
 }
 html, body{
+    font-family: var(--fonte1);
     min-width: 100vh;
     background-color: darkgray;
 }
@@ -16,10 +26,13 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 4vw;
 }
 header > h1{
+    font-family: var(--fonte2);
     padding-top:50px;
     font-variant: small-caps;
+    font-size: 3em;
 }
 header > p{
     padding-bottom: 50px;
@@ -47,17 +60,20 @@ a{
  }
  .imagem{
     background-color: rgb(31, 30, 30);
-    color: white
+    color: white;
+
  }
 
 section{
+    font-family: var(--fonte3);
     background-attachment: fixed;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2.7vw;
 }
 section.imagem>p{
-    width: 400px;
+    display: inline-block;
     background-color: rgb(70, 68, 68);
 }
