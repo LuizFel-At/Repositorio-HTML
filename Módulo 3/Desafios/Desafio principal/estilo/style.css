@@ -59,8 +59,10 @@ a{
     color: black;
  }
  .imagem{
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(68, 65, 65);
     color: white;
+    box-shadow: inset 6px 5px 13px 0px rgb(49, 49, 49);
+    background-attachment: fixed;
 
  }
 
@@ -76,4 +78,22 @@ section{
 section.imagem>p{
     display: inline-block;
     background-color: rgb(70, 68, 68);
+    text-shadow: 1px 1px opx black;
 }
+section > p{
+    padding-bottom: 1em;
+}
+
+    #img1{
+        background-image: url('../../Imagens/background001.jpg');
+        background-position: right center;
+        background-size: cover;
+
+    }
+
+    #img2{
+        background-image: url('../../Imagens/background002.jpg');
+        background-position: right center;
+        background-size: cover;
+
+    }
